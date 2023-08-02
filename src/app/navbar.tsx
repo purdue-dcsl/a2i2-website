@@ -28,7 +28,9 @@ export default function Navbar() {
               <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
                 <div className="flex flex-shrink-0 items-center">
                   <div className={font.className}>
-                    <p className="text-4xl">A2I2</p>
+                    <a href="">
+                      <p className="text-4xl hover:scale-110">A2I2</p>
+                    </a>
                   </div>
                   <div className="absolute right-1">
                     <DarkModeToggle
