@@ -2,9 +2,13 @@
 
 import "./globals.css"
 import { Stage, Layer, Line } from 'react-konva';
-import { useEffect, useRef, useState } from 'react'
+import { useEffect, useState } from 'react'
+import { BrowserRouter, Routes, Route, Link, HashRouter } from "react-router-dom";
 
-export default function Home() {
+import Home from "./home"
+import Research from "./research"
+
+export default function MainPage() {
   const [dimensions, setDimensions] = useState({
     width: 0,
     height: 0
@@ -13,8 +17,8 @@ export default function Home() {
   useEffect(() => {
     function setSize() {
         setDimensions({
-          width: window.innerWidth,
-          height: window.innerHeight,
+          width: 250,
+          height: 300,
         });
     }
     setSize();
@@ -23,10 +27,11 @@ export default function Home() {
 
 
   return (
-    <main className="flex min-h-screen w-screen flex-col items-center justify-between">
-      <div className="p-12 hero w-screen rounded-b-3xl md:rounded-b-xxl lg:p-24 md:p-18">
+    <main className="flex min-h-screen w-screen flex-col items-center justify-stretch">
+      <div className="p-12 hero w-screen lg:p-24 md:p-18">
+        <p className="font-extralight">Assured Autonomy Innovation Institute</p>
         <div className="w-full flex h-40 md:h-60 lg:h-80">
-          <h1 className="font-bold text-left w-3/4 mr-1.5">
+          <h1 className="font-bold text-left w-3/4 mr-3">
             Assured autonomy is rapidly gaining traction in U.S. Department of Defense (DOD) circles.
           </h1>
           <div className="w-1/4 overflow-visible scale-30 -translate-y-8 md:scale-75 md:transform-none lg:scale-100 lg:transform-none">
@@ -52,9 +57,16 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div>
-        <p>askjdslkdjsl</p>
-      </div>
+      <HashRouter>
+        <div className="flex flex-row w-screen justify-around mt-10">
+          <Link to="/"><p>Home</p></Link>
+          <Link to="/research"><p>Our Research</p></Link>
+        </div>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/research" element={<Research />} />
+        </Routes>
+      </HashRouter>
     </main>
   )
 }

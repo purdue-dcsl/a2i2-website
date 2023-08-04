@@ -7,7 +7,7 @@
   font-family: 'Noto Sans', sans-serif;
   --text: #252525;
   --background: #ffffff;
-  --background2: #d0d0d0;
+  --background2: #dbdbdb;
   --primary: #cfb991;
   --secondary: #000000;
   --accent: #daaa00;
@@ -34,21 +34,34 @@ main {
   color: var(--text);
   background-color: var(--background);
   transition: all 0.2s ease;
-  font-size: clamp(1rem, -0.875rem + 6.333vw, 3.5rem);
+  font-size: clamp(1rem, -0.875rem + 5.333vw, 3.5rem);
 }
 
 p {
   color: var(--text);
   transition: all 0.2s ease;
-  font-size: clamp(0.75rem, -0.875rem + 6vw, 1.2rem);
+  font-size: clamp(0.75rem, -0.875rem + 5vw, 1.2rem);
 }
 
 .navbar {
   background-color: var(--background);
+  backdrop-filter: blur(0.8);
   transition: all 0.2s ease;
 }
 
 .hero {
   background-color: var(--background2);
   transition: all 0.2s ease;
+}
+
+.description-clamp-1 {
+  color: var(--text);
+  transition: all 0.2s ease;
+  font-size: clamp(0.75rem, -0.875rem + 5vw, 2rem);
+}
+
+.description-clamp-2 {
+  color: var(--text);
+  transition: all 0.2s ease;
+  font-size: clamp(0.5rem, -0.875rem + 5vw, 1.25rem);
 }
