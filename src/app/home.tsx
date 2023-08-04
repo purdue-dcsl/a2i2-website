@@ -6,7 +6,7 @@ import "./globals.css"
 export default function Home() {
 
     return (
-      <div className="p-12 w-screen lg:p-24 md:p-18">
+      <div className="p-3 md:p-12 w-screen lg:p-24 md:p-18">
         <div className="flex flex-row justify-between">
           <img src="https://www.purdue.edu/purdue/images/audience/about-banner.jpg" className="w-1/4 mr-3 md:mr-6 lg:mr-10 object-contain" />
           <p className="leading-relaxed description-clamp-1">

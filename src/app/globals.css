@@ -65,3 +65,22 @@ p {
   transition: all 0.2s ease;
   font-size: clamp(0.5rem, -0.875rem + 5vw, 1.25rem);
 }
+
+.tabButton {
+  border-color: var(--text);
+  transition: all 0.2s ease;
+}
+
+.tabButton:hover {
+  border-color: var(--accent);
+  transition: all 0.2s ease;
+}
+
+.tabButtonSelected {
+  border-color: var(--accent);
+}
+
+.tabSelector {
+  background: var(--background);
+  transition: all 0.2s ease;
+}

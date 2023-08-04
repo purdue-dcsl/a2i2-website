@@ -5,8 +5,8 @@ import "./globals.css"
 export default function Research() {
 
     return (
-        <main className="flex min-h-screen w-screen flex-col items-center justify-stretch">
+        <div className="p-12 w-screen lg:p-24 md:p-18">
             <p>kajskdjskjd</p>
-        </main>
+        </div>
     )
 }
