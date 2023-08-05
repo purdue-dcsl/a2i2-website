@@ -22,6 +22,36 @@
   --accent: #daab00;
 }
 
+/* COLORS */
+
+.accent {
+  color: var(--accent);
+}
+
+.primary {
+  color: var(--primary);
+}
+
+.secondary {
+  color: var(--secondary);
+}
+
+.background {
+  background-color: var(--background);
+}
+
+.background2 {
+  background-color: var(--background2);
+}
+
+.text {
+  color: var(--text);
+}
+
+/* others */
+
+html { background-color: var(--background); }
+
 html, body {
   overflow-x: hidden;
 }
@@ -83,4 +113,14 @@ p {
 .tabSelector {
   background: var(--background);
   transition: all 0.2s ease;
+}
+
+.footer {
+  background-color: var(--background2);
+  transition: all 0.2s ease;
+}
+
+.footerText {
+  color: var(--text);
+  font-size: clamp(0.5rem, -0.875rem + 3.5vw, 1rem);
 }
