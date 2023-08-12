@@ -19,8 +19,8 @@ export default function Research() {
             </div>
             <p className="mt-6 md:mt-16 description-clamp-2">The research contributions in these three pillars will combine to achieve the end deliverable of secure-by-design autonomous
                 algorithms that can operate under the constraints, and uncertainties, of a battlefield environment.
-                The instantiation will be in a prototype software system called SCRAMBLE
-                (SeCure Real-time Decision-Making for the AutonoMous BattLEfield).
+                The instantiation will be in a prototype software system called <b>SCRAMBLE </b>
+                (<b>S</b>e<b>C</b>ure <b>R</b>eal-time Decision-Making for the <b>A</b>utono<b>M</b>ous <b>B</b>att<b>LE</b>field).
             </p>
         </div>
     )

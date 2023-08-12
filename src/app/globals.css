@@ -56,7 +56,7 @@ html, body {
   overflow-x: hidden;
 }
 body {
-  position: relative
+  position: relative;
 }
 
 main {
@@ -118,6 +118,12 @@ p {
 
 .tabSelector {
   background: var(--background);
+  transition: all 0.2s ease;
+}
+
+.contact-button {
+  background-color: var(--primary);
+  color: #252525 !important;
   transition: all 0.2s ease;
 }
 

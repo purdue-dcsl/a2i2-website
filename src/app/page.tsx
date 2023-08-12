@@ -8,6 +8,7 @@ import { Routes, Route, Link, HashRouter } from "react-router-dom";
 import Home from "./home"
 import Research from "./research"
 import Footer from "./footer"
+import Team from "./team"
 
 export default function MainPage() {
   const [show, setShow] = useState([true, false, false, false, false]);
@@ -81,6 +82,7 @@ export default function MainPage() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/research" element={<Research />} />
+            <Route path="/team" element={<Team />} />
           </Routes>
         </HashRouter>
       </main>
