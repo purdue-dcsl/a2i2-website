@@ -8,12 +8,39 @@ export default function Team() {
     return (
         <div className="p-3 md:p-12 w-screen lg:p-24 md:p-18">
             <div className="flex flex-wrap justify-around">
-                <div className="flex flex-col w-72 mb-5 place-content-center">
-                    <img src='/stone-column.png' className="rounded-full drop-shadow-lg m-5" />
-                    <p className="text-center text text-2xl">Name Name</p>
-                    <p className="text-center accent text-base">expertise goes here</p>
+                <div className="grid flex-col w-72 mb-5 place-content-center">
+                    <img src='/saurabhbagchi.jpg' className="rounded-full drop-shadow-lg m-5 w-52 h-52 object-cover" />
+                    <p className="text-center text text-2xl">Saurabh Bagchi</p>
+                    <p className="text-center accent text-base">Distributed systems<br />System security and reliability</p>
                     <a className="rounded-full contact-button text-base mt-2 w-9 h-9 text-center place-self-center hover:bg-gray-300"
-                        href="" target="_blank" rel="noopener noreferrer">
+                        href="mailto:sbagchi@purdue.edu" target="_blank" rel="noopener noreferrer">
+                        <span className="grid h-full w-full place-content-center"><Mail color="black" size={22} /></span>
+                    </a>
+                </div>
+                <div className="grid flex-col w-72 mb-5 place-content-center">
+                    <img src='/somalichaterji.png' className="rounded-full drop-shadow-lg m-5 w-52 h-52 object-cover" />
+                    <p className="text-center text text-2xl">Somali Chaterji</p>
+                    <p className="text-center accent text-base">Distributed testbeds of<br />embedded & edge<br />Approximate computing</p>
+                    <a className="rounded-full contact-button text-base mt-2 w-9 h-9 text-center place-self-center hover:bg-gray-300"
+                        href="mailto:schaterji@purdue.edu" target="_blank" rel="noopener noreferrer">
+                        <span className="grid h-full w-full place-content-center"><Mail color="black" size={22} /></span>
+                    </a>
+                </div>
+                <div className="grid flex-col w-72 mb-5 place-content-center">
+                    <img src='/mungchiang.jpg' className="rounded-full drop-shadow-lg m-5 w-52 h-52 object-cover" />
+                    <p className="text-center text text-2xl">Mung Chiang</p>
+                    <p className="text-center accent text-base">Edge computing<br />Network optimization</p>
+                    <a className="rounded-full contact-button text-base mt-2 w-9 h-9 text-center place-self-center hover:bg-gray-300"
+                        href="/" target="_blank" rel="noopener noreferrer">
+                        <span className="grid h-full w-full place-content-center"><Mail color="black" size={22} /></span>
+                    </a>
+                </div>
+                <div className="grid flex-col w-72 mb-5 place-content-center">
+                    <img src='/kwangtaikkim.jpg' className="rounded-full drop-shadow-lg m-5 w-52 h-52 object-cover" />
+                    <p className="text-center text text-2xl">Kwang Taik Kim</p>
+                    <p className="text-center accent text-base">Edge computing<br />NextG wireless</p>
+                    <a className="rounded-full contact-button text-base mt-2 w-9 h-9 text-center place-self-center hover:bg-gray-300"
+                        href="mailto:kimkt@purdue.edu" target="_blank" rel="noopener noreferrer">
                         <span className="grid h-full w-full place-content-center"><Mail color="black" size={22} /></span>
                     </a>
                 </div>

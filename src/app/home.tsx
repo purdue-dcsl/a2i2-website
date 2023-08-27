@@ -10,8 +10,13 @@ export default function Home() {
         <div className="flex flex-row justify-between">
           <img src="https://www.purdue.edu/purdue/images/audience/about-banner.jpg" className="w-1/4 mr-3 md:mr-6 lg:mr-10 object-contain" />
           <p className="leading-relaxed description-clamp-1">
-            Purdue's Army Artificial Intelligence Innovation Institute (A2I2) (2020-2025),
-            falls within the Army Research Lab's broader A2I2 program. It is supported by Army Research Lab under Contract No. W911NF-2020.
+          The term broadly relates to how to put security into autonomous operations. Assurance will encourage people to adopt autonomous systems, and reduce societal harm from insecure autonomous systems.
+          </p>
+        </div>
+        <div className="mt-24 lg:px-36">
+          <p className="leading-relaxed description-clamp-2">
+          Purdue's Army Artificial Intelligence Innovation Institute (A2I2) (2020-2025), falls within the Army Research Lab's broader A2I2 program.
+          It is supported by Army Research Lab under Contract No. W911NF-2020.
           </p>
         </div>
         <div className="mt-24 lg:px-36">
