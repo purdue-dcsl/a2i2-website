@@ -2,11 +2,12 @@
 
 import './globals.css'
 import Navbar from "./navbar"
+import { Metadata } from 'next';
 import { Noto_Sans } from 'next/font/google'
 
 const font = Noto_Sans({ weight: ['400'], subsets: ['cyrillic'] })
 
-export const metadata = {
+export const metadata: Metadata = {
   title: 'A2I2',
   description: 'A2I2',
 }

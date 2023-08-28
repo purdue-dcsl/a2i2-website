@@ -15,7 +15,7 @@ export default function Home() {
         </div>
         <div className="mt-24 lg:px-36">
           <p className="leading-relaxed description-clamp-2">
-          Purdue's Army Artificial Intelligence Innovation Institute (A2I2) (2020-2025), falls within the Army Research Lab's broader A2I2 program.
+          Purdue&apos;s Army Artificial Intelligence Innovation Institute (A2I2) (2020-2025), falls within the Army Research Lab&apos;s broader A2I2 program.
           It is supported by Army Research Lab under Contract No. W911NF-2020.
           </p>
         </div>
@@ -31,8 +31,8 @@ export default function Home() {
           <p className="leading-relaxed description-clamp-2">
             Our Institute is designing secure algorithms that can provide probabilistic guarantees on security and latency, under powerful,
             rigorously quantified adversary models, moving away from the trend of one-off security solutions for specific attack vectors.
-            We are developing a robust, scalable, and usable software suite that can execute on today's standard and custom execution platforms
-            plus on ARL CISD's (Computational and Information Sciences Directorate) autonomous battlefield testbed.
+            We are developing a robust, scalable, and usable software suite that can execute on today&apos;s standard and custom execution platforms
+            plus on ARL CISD&apos;s (Computational and Information Sciences Directorate) autonomous battlefield testbed.
           </p>
         </div>
       </div>
