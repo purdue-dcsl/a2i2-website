@@ -1,7 +1,7 @@
 "use client";
 
 import "./globals.css"
-import { Stage, Layer, Line } from 'react-konva';
+// import { Stage, Layer, Line } from 'react-konva';
 import { useEffect, useState } from 'react'
 import { Routes, Route, Link, HashRouter } from "react-router-dom";
 
@@ -49,7 +49,7 @@ export default function MainPage() {
               Assured autonomy is rapidly gaining traction in U.S. Department of Defense (DOD) circles.
             </h1>
             <div className="w-1/4 overflow-visible scale-30 -translate-y-8 md:scale-75 md:transform-none lg:scale-100 lg:transform-none">
-              <Stage width={dimensions.width} height={dimensions.height}>
+              {/* <Stage width={dimensions.width} height={dimensions.height}>
                 <Layer>
                   <Line closed points={[100, 300, 0, 150, 100, 0, 200, 150]}
                         fill="#cfb991"
@@ -67,7 +67,7 @@ export default function MainPage() {
                         shadowBlur={10}
                         shadowOpacity={0.6} />
                 </Layer>
-              </Stage>
+              </Stage> */}
             </div>
           </div>
         </div>
