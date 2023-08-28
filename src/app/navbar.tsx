@@ -1,8 +1,8 @@
 'use client';
 
 import { Disclosure } from '@headlessui/react'
-import { DarkModeToggle } from '@anatoliygatt/dark-mode-toggle'
 import { useState, useEffect } from 'react'
+import { DarkModeToggle } from '@anatoliygatt/dark-mode-toggle'
 import { Noto_Sans } from 'next/font/google'
 import "./globals.css"
 
