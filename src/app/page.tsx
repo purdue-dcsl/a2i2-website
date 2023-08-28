@@ -3,7 +3,6 @@
 import "./globals.css"
 // import { Stage, Layer, Line } from 'react-konva';
 import { useEffect, useState } from 'react'
-import { Routes, Route, Link, HashRouter } from "react-router-dom";
 
 import Home from "./home"
 import Research from "./research"
@@ -11,15 +10,20 @@ import Footer from "./footer"
 import Team from "./team"
 
 export default function MainPage() {
-  const [show, setShow] = useState([true, false, false, false, false]);
-  const tab1 = "border-b-4 tabButton md:p-3 " + (show[0] ? "tabButtonSelected" : "");
-  const tab2 = show[1] ? "tabButtonSelected border-b-4 tabButton md:p-3" : "border-b-4 tabButton md:p-3";
-  const tab3 = show[2] ? "tabButtonSelected border-b-4 tabButton md:p-3" : "border-b-4 tabButton md:p-3";
-  const tab4 = show[3] ? "tabButtonSelected border-b-4 tabButton md:p-3" : "border-b-4 tabButton md:p-3";
-  const tab5 = show[4] ? "tabButtonSelected border-b-4 tabButton md:p-3" : "border-b-4 tabButton md:p-3";
+  const [show, setShow] = useState('home');
 
-  function changeShow(i: number) {
-    setShow(show=>show.map(function(_, index) { return index === i; }));
+  function changeShow(layout: string) {
+    setShow(layout);
+  }
+
+  let content;
+
+  if (show === 'home') {
+    content = <Home />;
+  } else if (show === 'research') {
+    content = <Research />;
+  } else if (show === 'team') {
+    content = <Team />;
   }
 
   const [dimensions, setDimensions] = useState({
@@ -71,20 +75,19 @@ export default function MainPage() {
             </div>
           </div>
         </div>
-        <HashRouter>
-          <div className="grid grid-flow-col w-5/6 md:w-3/4 justify-stretch mt-6 tabSelector p-2">
-            <Link to="/" className={tab1} onClick={() => changeShow(0)}><p className="text-center">Home</p></Link>
-            <Link to="/research" className={tab2} onClick={() => changeShow(1)}><p className="text-center">Research</p></Link>
-            <Link to="/team" className={tab3} onClick={() => changeShow(2)}><p className="text-center">Team</p></Link>
-            <Link to="/publications" className={tab4} onClick={() => changeShow(3)}><p className="text-center">Publications</p></Link>
-            <Link to="/press" className={tab5} onClick={() => changeShow(4)}><p className="text-center">Press</p></Link>
-          </div>
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/research" element={<Research />} />
-            <Route path="/team" element={<Team />} />
-          </Routes>
-        </HashRouter>
+        <div className="grid grid-flow-col w-5/6 md:w-3/4 justify-stretch mt-6 tabSelector p-2">
+          <button className={show === 'home' ? 'border-b-4 tabButton md:p-3 tabButtonSelected' : 'border-b-4 tabButton md:p-3'} onClick={() => changeShow('home')}>
+            <p className="text-center">Home</p>
+          </button>
+          <button className={show === 'research' ? 'border-b-4 tabButton md:p-3 tabButtonSelected' : 'border-b-4 tabButton md:p-3'} onClick={() => changeShow('research')}>
+            <p className="text-center">Research</p>
+          </button>
+          <button className={show === 'team' ? 'border-b-4 tabButton md:p-3 tabButtonSelected' : 'border-b-4 tabButton md:p-3'} onClick={() => changeShow('team')}>
+            <p className="text-center">Team</p>
+          </button>
+          {/* Add other tabs here */}
+        </div>
+        {content}
       </main>
       <Footer />
     </>
