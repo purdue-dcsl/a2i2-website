@@ -1,5 +1,3 @@
-'use client';
-
 import './globals.css'
 import Navbar from "./navbar"
 import { Metadata } from 'next';
