@@ -87,19 +87,16 @@ p {
 .description-clamp-1 {
   color: var(--text);
   transition: all 0.2s ease;
-  font-size: clamp(0.75rem, -0.875rem + 5vw, 2rem);
 }
 
 .description-clamp-2 {
   color: var(--text);
   transition: all 0.2s ease;
-  font-size: clamp(0.5rem, -0.875rem + 5vw, 1.25rem);
 }
 
 .research-pillars-clamp {
   color: var(--text);
   transition: all 0.2s ease;
-  font-size: clamp(0.5rem, -0.875rem + 5vw, 1.75rem);
 }
 
 .tabButton {

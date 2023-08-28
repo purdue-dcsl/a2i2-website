@@ -1,7 +1,7 @@
 "use client";
 
 import "./globals.css"
-import { Stage, Layer, Line } from 'react-konva';
+import Image from 'next/image'
 import { useEffect, useState } from 'react'
 
 import Home from "./home"
@@ -34,8 +34,8 @@ export default function MainPage() {
   useEffect(() => {
     function setSize() {
         setDimensions({
-          width: 250,
-          height: 300,
+          width: 400,
+          height: 500,
         });
     }
     setSize();
@@ -52,8 +52,9 @@ export default function MainPage() {
             <h1 className="font-bold text-left w-3/4 mr-3">
               Assured autonomy is rapidly gaining traction in U.S. Department of Defense (DOD) circles.
             </h1>
-            <div className="w-1/4 overflow-visible scale-30 -translate-y-8 md:scale-75 md:transform-none lg:scale-100 lg:transform-none">
-              <Stage width={dimensions.width} height={dimensions.height}>
+            <div className="w-1/4 overflow-visible translate-y-16 md:translate-y-8 lg:transform-none scale-150 md:scale-110">
+              <Image src="/homepage-design.png" alt="" width={dimensions.width} height={dimensions.height}/>
+              {/* <Stage width={dimensions.width} height={dimensions.height}>
                 <Layer>
                   <Line closed points={[100, 300, 0, 150, 100, 0, 200, 150]}
                         fill="#cfb991"
@@ -71,11 +72,11 @@ export default function MainPage() {
                         shadowBlur={10}
                         shadowOpacity={0.6} />
                 </Layer>
-              </Stage>
+              </Stage> */}
             </div>
           </div>
         </div>
-        <div className="grid grid-flow-col w-5/6 md:w-3/4 justify-stretch mt-6 tabSelector p-2">
+        <div className="grid grid-flow-col w-5/6 md:w-3/4 justify-stretch mt-6 tabSelector p-2 z-40">
           <button className={show === 'home' ? 'border-b-4 tabButton md:p-3 tabButtonSelected' : 'border-b-4 tabButton md:p-3'} onClick={() => changeShow('home')}>
             <p className="text-center">Home</p>
           </button>
@@ -85,7 +86,6 @@ export default function MainPage() {
           <button className={show === 'team' ? 'border-b-4 tabButton md:p-3 tabButtonSelected' : 'border-b-4 tabButton md:p-3'} onClick={() => changeShow('team')}>
             <p className="text-center">Team</p>
           </button>
-          {/* Add other tabs here */}
         </div>
         {content}
       </main>
