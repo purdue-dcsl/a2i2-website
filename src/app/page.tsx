@@ -24,6 +24,10 @@ export default function MainPage() {
     content = <Research />;
   } else if (show === 'team') {
     content = <Team />;
+  } else if (show === 'software') {
+    //content = <Software />;
+  } else if (show === 'news') {
+    //content = <News />;
   }
 
   const [dimensions, setDimensions] = useState({
@@ -47,10 +51,10 @@ export default function MainPage() {
     <>
       <main className="flex min-h-screen w-screen flex-col items-center justify-stretch">
         <div className="p-12 hero w-screen lg:p-24 md:p-18">
-          <p className="font-extralight">Assured Autonomy Innovation Institute</p>
+          {/*<p className="font-extralight">Assured Autonomy Innovation Institute</p>*/}
           <div className="w-full flex h-40 md:h-60 lg:h-80">
-            <h1 className="font-bold text-left w-3/4 mr-3">
-              Assured autonomy is rapidly gaining traction in U.S. Department of Defense (DOD) circles.
+            <h1 className="font-bold text-left w-3/4 mr-3 text-xl md:text-5xl lg:text-7xl">
+              Assured Autonomy Innovation Institute (A2I2) <span className="accent">@ Purdue</span>
             </h1>
             <div className="w-1/4 overflow-visible translate-y-16 md:translate-y-8 lg:transform-none scale-150 md:scale-110">
               <Image src="/homepage-design.png" alt="" width={dimensions.width} height={dimensions.height}/>
@@ -85,6 +89,12 @@ export default function MainPage() {
           </button>
           <button className={show === 'team' ? 'border-b-4 tabButton md:p-3 tabButtonSelected' : 'border-b-4 tabButton md:p-3'} onClick={() => changeShow('team')}>
             <p className="text-center">Team</p>
+          </button>
+          <button className={show === 'software' ? 'border-b-4 tabButton md:p-3 tabButtonSelected' : 'border-b-4 tabButton md:p-3'} onClick={() => changeShow('software')}>
+            <p className="text-center">Software</p>
+          </button>
+          <button className={show === 'news' ? 'border-b-4 tabButton md:p-3 tabButtonSelected' : 'border-b-4 tabButton md:p-3'} onClick={() => changeShow('news')}>
+            <p className="text-center">News</p>
           </button>
         </div>
         {content}
