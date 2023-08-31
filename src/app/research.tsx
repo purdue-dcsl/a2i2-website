@@ -26,6 +26,36 @@ export default function Research() {
                 The instantiation will be in a prototype software system called <b>SCRAMBLE </b>
                 (<b>S</b>e<b>C</b>ure <b>R</b>eal-time Decision-Making for the <b>A</b>utono<b>M</b>ous <b>B</b>att<b>LE</b>field).
             </p>
+            <br />
+            <hr />
+            <br />
+            <h2 className="text-3xl accent">Representative Publications</h2>
+            <div className="flex flex-col mt-6">
+                <div className="flex lg:flex-row flex-col-reverse">
+                    <p className="p-4 text-md">Secure aggregation is a privacy-preserving technique used in federated learning. However, existing attacks on secure aggregation can be computationally expensive. The authors of this paper propose a new attack on secure aggregation that is more efficient by exploiting the sparsity of the aggregate update. The authors show that their attack can achieve a leakage rate of 77% even with 1000 clients in aggregation, while reducing the model size overhead by over 327x and the computation time by 3.34x compared to the state-of-the-art.</p>
+                    <img src="/figure1.png" className="w-full lg:w-1/2 lg:m-4 object-contain" />
+                </div>
+                <p className="p-4 text-md">Joshua C. Zhao, Ahmed Roushdy Elkordy, Atul Sharma, Yahya H. Ezzeldin, Salman Avestimehr, and Saurabh Bagchi. "The Resource Problem of Using Linear Layer Leakage Attack in Federated Learning." In Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), pp. 3974-3983. 2023.</p>
+            </div>
+            <hr className="w-1/3 ml-auto mr-auto mt-5 mb-5"/>
+            <div className="flex flex-col mt-6">
+                <div className="flex lg:flex-row flex-col">
+                    <img src="/figure2.png" className="w-full lg:w-1/2 lg:m-4 object-contain" />
+                    <p className="p-4 text-md">Cooperative edge-assisted dynamic federated learning (CE-FL) is a new federated learning framework that addresses the challenges of heterogeneity, mobility, and dynamicity in edge networks. CE-FL allows data collection and model training to be carried out cooperatively at the end devices and edge servers, and it uses a floating aggregation point to aggregate the local models. CE-FL also considers the heterogeneity of network elements in terms of communication/computation models and the proximity to one another. In addition, CE-FL is designed to be adaptive to the dynamic environment with online variation of data at the network devices.</p>
+                </div>
+                <p className="p-4 text-md">Bhargav Ganguly, Seyyedali Hosseinalipour, Kwang Taik Kim, Christopher G. Brinton, Vaneet Aggarwal, David J. Love, and Mung Chiang. "Multi-edge server-assisted dynamic federated learning with an optimized floating aggregation point." IEEE/ACM Transactions on Networking (2023).</p>
+            </div>
+            <hr className="w-1/3 ml-auto mr-auto mt-5 mb-5"/>
+            <div className="flex flex-col mt-6">
+                <div className="flex lg:flex-row flex-col-reverse">
+                    <p className="p-4 text-md">Distribution shift is a change in the distribution of data that can have a significant impact on the performance of machine learning models. Prior work on distribution shift has focused on detecting if a shift has occurred, but has not provided any insights into how to mitigate the effects of the shift.
+                                               <br />
+                                               <br />
+                                               The authors of this paper propose a new approach to explaining distribution shift using interpretable transportation maps. These maps are derived from a relaxation of the optimal transport problem, and they can be used to visualize the changes in the data distribution. The authors show that their approach can provide a better balance between detail and interpretability than baseline explanations.</p>
+                    <img src="/figure3.png" className="w-full lg:w-1/2 lg:m-4 object-contain" />
+                </div>
+                <p className="p-4 text-md">Sean Kulinski, and David I. Inouye. "Towards explaining distribution shifts." In International Conference on Machine Learning, pp. 17931-17952. PMLR, 2023.</p>
+            </div>
         </div>
     )
 }

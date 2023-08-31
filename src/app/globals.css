@@ -133,3 +133,7 @@ p {
   color: var(--text);
   font-size: clamp(0.5rem, -0.875rem + 3.5vw, 1rem);
 }
+
+hr {
+  border-color: var(--text);
+}

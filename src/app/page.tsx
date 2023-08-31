@@ -9,6 +9,8 @@ import Research from "./research"
 import Footer from "./footer"
 import Team from "./team"
 
+import News from "./news"
+
 export default function MainPage() {
   const [show, setShow] = useState('home');
 
@@ -27,7 +29,7 @@ export default function MainPage() {
   } else if (show === 'software') {
     //content = <Software />;
   } else if (show === 'news') {
-    //content = <News />;
+    content = <News />;
   }
 
   const [dimensions, setDimensions] = useState({
