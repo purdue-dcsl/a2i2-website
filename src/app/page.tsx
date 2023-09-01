@@ -8,7 +8,7 @@ import Home from "./home"
 import Research from "./research"
 import Footer from "./footer"
 import Team from "./team"
-
+import Software from "./software"
 import News from "./news"
 
 export default function MainPage() {
@@ -27,7 +27,7 @@ export default function MainPage() {
   } else if (show === 'team') {
     content = <Team />;
   } else if (show === 'software') {
-    //content = <Software />;
+    content = <Software />;
   } else if (show === 'news') {
     content = <News />;
   }
