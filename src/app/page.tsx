@@ -82,7 +82,7 @@ export default function MainPage() {
             </div>
           </div>
         </div>
-        <div className="grid grid-flow-col w-5/6 md:w-3/4 justify-stretch mt-6 tabSelector p-2 z-40">
+        <div className="grid grid-flow-col w-11/12 md:w-3/4 justify-stretch mt-6 tabSelector p-2 z-40">
           <button className={show === 'home' ? 'border-b-4 tabButton md:p-3 tabButtonSelected' : 'border-b-4 tabButton md:p-3'} onClick={() => changeShow('home')}>
             <p className="text-center">Home</p>
           </button>
@@ -93,7 +93,7 @@ export default function MainPage() {
             <p className="text-center">Team</p>
           </button>
           <button className={show === 'software' ? 'border-b-4 tabButton md:p-3 tabButtonSelected' : 'border-b-4 tabButton md:p-3'} onClick={() => changeShow('software')}>
-            <p className="text-center">Software</p>
+            <p className="text-center">Software/Datasets</p>
           </button>
           <button className={show === 'news' ? 'border-b-4 tabButton md:p-3 tabButtonSelected' : 'border-b-4 tabButton md:p-3'} onClick={() => changeShow('news')}>
             <p className="text-center">News</p>

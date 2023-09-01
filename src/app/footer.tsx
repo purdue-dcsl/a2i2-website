@@ -6,8 +6,7 @@ export default function Footer() {
 
     return (
         <div className="p-6 w-screen lg:p-18 md:p-12 footer">
-            <p className="footerText text-center ">Copyright © 2023 <b className="accent">Purdue</b></p>
-            <p className="footerText text-center"><b className="accent">Contact:</b> helloworld@purdue.edu</p>
+            <p className="md:w-1/2 mr-auto ml-auto footerText text-center text-sm">Purdue&apos;s <span className="accent">Army Artificial Intelligence Innovation Institute (A2I2) (2020-2025)</span> is supported by Army Research Lab under Contract No. W911NF-2020.</p>
         </div>
     )
 }
