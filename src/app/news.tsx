@@ -15,20 +15,6 @@ export default function News() {
 
                     </a>
                 </div>
-                <div className="lg:w-1/3 md:w-1/2 w-full hover:scale-105 transition-all">
-                    <a href="https://medium.com/purdue-engineering/assured-autonomy-what-from-where-how-and-what-next-661a5d521b58" target="_blank" rel="noopener noreferrer" className="flex flex-col m-3 p-3 border">
-                        <img src="/news1.png" className="w-full object-contain" />
-                        <p className="pt-4 font-bold text-2xl">Assured autonomy: What, from where, how, and what next?</p>
-                        <p className="pt-1 text-sm">medium.com • Aug 21</p>
-                    </a>
-                </div>
-                <div className="lg:w-1/3 md:w-1/2 w-full hover:scale-105 transition-all">
-                    <a href="https://medium.com/purdue-engineering/assured-autonomy-what-from-where-how-and-what-next-661a5d521b58" target="_blank" rel="noopener noreferrer" className="flex flex-col m-3 p-3 border">
-                        <img src="/news1.png" className="w-full object-contain" />
-                        <p className="pt-4 font-bold text-2xl">Assured autonomy: What, from where, how, and what next?</p>
-                        <p className="pt-1 text-sm">medium.com • Aug 21</p>
-                    </a>
-                </div>
             </div>
         </div>
     )
