@@ -8,7 +8,7 @@ export default function Home() {
     return (
       <div className="p-3 md:p-12 w-screen lg:p-24 md:p-18">
         <div className="flex flex-col md:flex-row justify-between">
-          <img src="https://www.purdue.edu/purdue/images/audience/about-banner.jpg" className="mb-5 md:mb-0 md:w-1/4 md:mr-6 lg:mr-10 object-cover" />
+          <img src='bagchi-battlefield.jpg' className="mb-5 md:mb-0 md:w-1/4 md:mr-6 lg:mr-10 object-cover" />
           <p className="leading-relaxed description-clamp-1 text-xl md:text-3xl">
           Assured autonomy is rapidly gaining traction in U.S. Department of Defense (DOD) circles. The term broadly relates to how to put security into autonomous operations. Assurance will encourage people to adopt autonomous systems, and reduce societal harm from insecure autonomous systems.
           <br />
