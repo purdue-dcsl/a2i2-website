@@ -35,6 +35,13 @@ export default function Team() {
                     <br />
                     The StarCraftImage dataset from the CVPR 2023 paper: StarCraftImage: A Dataset For Prototyping Spatial Reasoning Methods For Multi-Agent Environments
                 </li>
+                <li className="text-lg mb-10">
+                    <a href="https://zenodo.org/record/6345733" target="_blank" rel="noopener noreferrer">
+                        <span className="text-lg accent">https://zenodo.org/record/6345733</span>
+                    </a>
+                    <br />
+                    The software for adaptive video object detection on mobile GPUs. Paper appeared in <b>EuroSys 2022</b>.
+                </li>
             </ol>
         </div>
     )
