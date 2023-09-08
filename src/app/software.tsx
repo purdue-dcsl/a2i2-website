@@ -33,7 +33,7 @@ export default function Team() {
                         <span className="text-lg accent">https://github.com/inouye-lab/starcraftimage</span>
                     </a>
                     <br />
-                    The StarCraftImage dataset from the CVPR 2023 paper: StarCraftImage: A Dataset For Prototyping Spatial Reasoning Methods For Multi-Agent Environments
+                    The StarCraftImage dataset from the <b>CVPR 2023</b> paper: StarCraftImage: A Dataset For Prototyping Spatial Reasoning Methods For Multi-Agent Environments
                 </li>
                 <li className="text-lg mb-10">
                     <a href="https://zenodo.org/record/6345733" target="_blank" rel="noopener noreferrer">
