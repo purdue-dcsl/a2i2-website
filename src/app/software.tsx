@@ -40,7 +40,7 @@ export default function Team() {
                         <span className="text-lg accent">https://zenodo.org/record/6345733</span>
                     </a>
                     <br />
-                    The software for adaptive video object detection on mobile GPUs. Paper appeared in <b>EuroSys 2022</b>.
+                    The software for adaptive video object detection on mobile GPUs, called LiteReconfig. Paper appeared in <b>EuroSys 2022</b>.
                 </li>
             </ol>
         </div>
