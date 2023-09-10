@@ -11,8 +11,12 @@ import Team from "./team"
 import Software from "./software"
 import News from "./news"
 
+import { useTheme } from "./ThemeContext";
+
 export default function MainPage() {
   const [show, setShow] = useState('home');
+  const [logo, setLogo] = useState('/favicon.ico');
+  const { mode } = useTheme();
 
   function changeShow(layout: string) {
     setShow(layout);
@@ -48,6 +52,13 @@ export default function MainPage() {
 
   }, []);
 
+  useEffect(() => {
+    if (mode === "dark") {
+      setLogo('/favicon.ico');
+    } else {
+      setLogo('/favicon-light.ico');
+    }
+  }, [mode]);
 
   return (
     <>
@@ -59,7 +70,7 @@ export default function MainPage() {
               Assured Autonomy Innovation Institute (A2I2) <span className="accent">@ Purdue</span>
             </h1>
             <div className="w-1/4 overflow-visible translate-y-16 md:translate-y-8 lg:transform-none scale-150 md:scale-110">
-              <Image src="/homepage-design.png" alt="" width={dimensions.width} height={dimensions.height}/>
+              <Image src={logo} alt="A2I2 Logo" width={dimensions.width} height={dimensions.height}/>
               {/* <Stage width={dimensions.width} height={dimensions.height}>
                 <Layer>
                   <Line closed points={[100, 300, 0, 150, 100, 0, 200, 150]}

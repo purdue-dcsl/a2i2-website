@@ -4,20 +4,21 @@ import { useState, useEffect } from 'react'
 import { Disclosure } from '@headlessui/react'
 import { DarkModeToggle } from '@anatoliygatt/dark-mode-toggle'
 import { Noto_Sans } from 'next/font/google'
+import { useTheme } from "./ThemeContext";
 import "./globals.css"
 
 const font = Noto_Sans({ weight: ['800'], subsets: ['cyrillic'] })
 
 export default function Navbar() {
-  const [mode, setMode] = useState('dark');
+  const { mode, toggleMode } = useTheme();
+
   useEffect(() => {
-    if (mode === 'dark') {
+    if (mode === "dark") {
       document.documentElement.setAttribute("data-theme", "dark");
-    }
-    else {
+    } else {
       document.documentElement.setAttribute("data-theme", "light");
     }
-  });
+  }, [mode]);
 
   return (
     <Disclosure as="nav" className="navbar">
@@ -47,7 +48,7 @@ export default function Navbar() {
                         inactiveThumbColor="#1e293b"
                         activeThumbColor="#e2e8f0"
                         onChange={(mode) => {
-                        setMode(mode);
+                        toggleMode(mode);
                         }}
                     />
                   </div>
