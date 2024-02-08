@@ -70,6 +70,21 @@ export default function Team() {
                         <span className="grid h-full w-full place-content-center"><img src="/mail.svg" /></span>
                     </a>
                 </div>
+                <div className="grid flex-col w-72 mb-5 place-content-center">
+                    <img src='/pengwang.jpg' className="rounded-full drop-shadow-lg m-5 w-52 h-52 object-cover" />
+                    <p className="text-center text text-2xl">Peng Wang</p>
+                    <p className="text-center accent text-base">Edge Computing<br />Network Optimization</p>
+                    <div className="flex flex-row place-content-center gap-2">
+                        <a className="rounded-full contact-button text-base mt-2 w-9 h-9 text-center place-self-center hover:bg-gray-300"
+                            href="./bios/pengwang.html" target="_blank" rel="noopener noreferrer">
+                            <span className="grid h-full w-full place-content-center"><img src="/user.svg" /></span>
+                        </a>
+                        <a className="rounded-full contact-button text-base mt-2 w-9 h-9 text-center place-self-center hover:bg-gray-300"
+                            href="mailto:peng.wang2.civ@army.mil" target="_blank" rel="noopener noreferrer">
+                            <span className="grid h-full w-full place-content-center"><img src="/mail.svg" /></span>
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     )

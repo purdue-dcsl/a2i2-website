@@ -9,7 +9,7 @@ const font = Noto_Sans({ weight: ["400"], subsets: ["cyrillic"] });
 
 export const metadata: Metadata = {
   title: "A2I2",
-  description: "A2I2",
+  description: "Assured Autonomy Innovation Institute (A2I2) @ Purdue",
 };
 
 export default function RootLayout({
