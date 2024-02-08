@@ -86,10 +86,6 @@ export default function Team() {
                             href="./bios/pengwang.html" target="_blank" rel="noopener noreferrer">
                             <span className="grid h-full w-full place-content-center"><img src="/user.svg" /></span>
                         </a>
-                        <a className="rounded-full contact-button text-base mt-2 w-9 h-9 text-center place-self-center hover:bg-gray-300"
-                            href="mailto:peng.wang2.civ@army.mil" target="_blank" rel="noopener noreferrer">
-                            <span className="grid h-full w-full place-content-center"><img src="/mail.svg" /></span>
-                        </a>
                     </div>
                 </div>
                 <div className="grid flex-col w-72 mb-5 place-content-center">
@@ -100,10 +96,6 @@ export default function Team() {
                         <a className="rounded-full contact-button text-base mt-2 w-9 h-9 text-center place-self-center hover:bg-gray-300"
                             href="./bios/zachhare.html" target="_blank" rel="noopener noreferrer">
                             <span className="grid h-full w-full place-content-center"><img src="/user.svg" /></span>
-                        </a>
-                        <a className="rounded-full contact-button text-base mt-2 w-9 h-9 text-center place-self-center hover:bg-gray-300"
-                            href="mailto:james.z.hare.civ@army.mil" target="_blank" rel="noopener noreferrer">
-                            <span className="grid h-full w-full place-content-center"><img src="/mail.svg" /></span>
                         </a>
                     </div>
                 </div>
