@@ -64,7 +64,7 @@ main {
   color: var(--text);
   background-color: var(--background);
   transition: all 0.2s ease;
-  font-size: clamp(1rem, -0.875rem + 5.333vw, 3.5rem);
+  /* font-size: clamp(1rem, -0.875rem + 5.333vw, 3.5rem); */
 }
 
 p {

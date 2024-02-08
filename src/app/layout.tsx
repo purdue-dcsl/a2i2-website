@@ -20,6 +20,10 @@ export default function RootLayout({
   return (
     <ThemeProvider>
       <html lang="en">
+      <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1, shrink-to-fit=no"
+      />
         <body className={font.className}>
           <div className="sticky top-0 z-50">
             <Navbar />
