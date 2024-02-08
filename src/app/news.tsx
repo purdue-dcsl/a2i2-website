@@ -11,7 +11,7 @@ export default function News() {
                     <a href="https://engineering.purdue.edu/grandchallenges" target="_blank" rel="noopener noreferrer" className="flex flex-col p-3 m-3 border">
                         <img src="/news2.jpg" className="w-full object-cover h-48" />
                         <p className="pt-4 font-normal text-xs">ARL personnel play a leading role in the Grand Challenges in Resilience Workshop organized at Purdue November 13-15. ARL Branch Chief, Dr. Priya Narayanan, addressed the audience and ARL researcher, Dr. Peng Wang, judged the student poster competition. </p>
-                        <p className="pt-1 text-sm">purdue.edu • Aug 21</p>
+                        <p className="pt-1 text-sm">purdue.edu • Nov 2023</p>
 
                     </a>
                 </div>
@@ -19,7 +19,7 @@ export default function News() {
                     <a href="https://medium.com/purdue-engineering/assured-autonomy-what-from-where-how-and-what-next-661a5d521b58" target="_blank" rel="noopener noreferrer" className="flex flex-col p-3 m-3 border">
                         <img src="/news1.png" className="w-full object-cover h-48" />
                         <p className="pt-4 font-bold text-2xl">Assured autonomy: What, from where, how, and what next?</p>
-                        <p className="pt-1 text-sm">medium.com • Aug 21</p>
+                        <p className="pt-1 text-sm">medium.com • Aug 2023</p>
 
                     </a>
                 </div>
