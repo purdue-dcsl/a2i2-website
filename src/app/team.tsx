@@ -99,6 +99,17 @@ export default function Team() {
                         </a>
                     </div>
                 </div>
+                <div className="grid flex-col w-72 mb-5 place-content-center">
+                    <img src='/kevinchan.jpg' className="rounded-full drop-shadow-lg m-5 w-52 h-52 object-cover" />
+                    <p className="text-center text text-2xl">Kevin Chan</p>
+                    <p className="text-center accent text-base">Edge computing<br />Wireless networks</p>
+                    <div className="flex flex-row place-content-center gap-2">
+                        <a className="rounded-full contact-button text-base mt-2 w-9 h-9 text-center place-self-center hover:bg-gray-300"
+                            href="./bios/kevinchan.html" target="_blank" rel="noopener noreferrer">
+                            <span className="grid h-full w-full place-content-center"><img src="/user.svg" /></span>
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     )
