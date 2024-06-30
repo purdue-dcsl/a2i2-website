@@ -16,6 +16,13 @@ export default function News() {
 
             const articles = Papa.parse(data, { header: true }).data.reverse() as { title: string, details: string, image: string, link: string }[];
 
+            // remove empty articles with blank fields
+            articles.forEach((article, index) => {
+                if (!article.title || !article.details || !article.image || !article.link) {
+                    articles.splice(index, 1);
+                }
+            });
+
             setArticles(articles);
             setLoading(false);
         }
