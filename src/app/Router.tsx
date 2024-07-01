@@ -1,6 +1,6 @@
 'use client'
 
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import ScrollToTop from './ScrollToTop'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import NewsArticle from './pages/news_article'
@@ -11,9 +11,20 @@ export default function Router({
 }: {
   children: React.ReactNode
 }) {
+
+  const [isClient, setIsClient] = useState(false);
+
+  useEffect(() => {
+    setIsClient(true);
+  }, []);
+
+  if (!isClient) {
+    return <div className='bg-black h-screen' />
+  }
+
   return (
     <BrowserRouter>
-    <ScrollToTop />
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={children} />
         <Route path="/article" element={<NewsArticle />} />

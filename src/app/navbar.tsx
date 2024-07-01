@@ -14,6 +14,10 @@ export default function Navbar() {
   const { mode, toggleMode } = useTheme();
 
   useEffect(() => {
+    if (!document) {
+      return;
+    }
+
     if (mode === "dark") {
       document.documentElement.setAttribute("data-theme", "dark");
     } else {
