@@ -1,6 +1,7 @@
 "use client";
 
-import "./globals.css"
+import "../globals.css"
+import Image from "next/image";
 
 
 export default function Home() {
@@ -8,7 +9,7 @@ export default function Home() {
     return (
       <div className="p-3 md:p-12 w-screen lg:p-24 md:p-18">
         <div className="flex flex-col md:flex-row justify-between">
-          <img src='bagchi-battlefield.jpg' alt="Battlefield Image" className="mb-5 md:mb-0 md:w-1/4 md:mr-6 lg:mr-10 object-cover" />
+          <Image src='/bagchi-battlefield.jpg' alt="Battlefield Image" className="mb-5 md:mb-0 md:w-1/4 md:mr-6 lg:mr-10 object-cover" width={1080} height={1080} />
           <p className="leading-relaxed description-clamp-1 text-xl md:text-3xl">
           Assured autonomy is rapidly gaining traction in U.S. Department of Defense (DOD) circles. The term broadly relates to how to put security into autonomous operations. Assurance will encourage people to adopt autonomous systems, and reduce societal harm from insecure autonomous systems.
           <br />

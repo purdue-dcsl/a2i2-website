@@ -10,7 +10,7 @@
   --background2: #dbdbdb;
   --primary: #cfb991;
   --secondary: #000000;
-  --accent: #daaa00;
+  --accent: #c0941c;
 }
 
 [data-theme="dark"] {
@@ -70,7 +70,6 @@ main {
 p {
   color: var(--text);
   transition: all 0.2s ease;
-  font-size: clamp(0.75rem, -0.875rem + 5vw, 1.2rem);
 }
 
 .navbar {

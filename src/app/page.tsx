@@ -4,12 +4,11 @@ import "./globals.css"
 import Image from 'next/image'
 import { useEffect, useState } from 'react'
 
-import Home from "./home"
-import Research from "./research"
-import Footer from "./footer"
-import Team from "./team"
-import Software from "./software"
-import News from "./news"
+import Home from "./pages/home"
+import Research from "./pages/research"
+import Team from "./pages/team"
+import Software from "./pages/software"
+import News from "./pages/news"
 
 import { useTheme } from "./ThemeContext";
 
@@ -43,10 +42,10 @@ export default function MainPage() {
 
   useEffect(() => {
     function setSize() {
-        setDimensions({
-          width: 400,
-          height: 500,
-        });
+      setDimensions({
+        width: 400,
+        height: 500,
+      });
     }
     setSize();
 
@@ -70,26 +69,7 @@ export default function MainPage() {
               Assured Autonomy Innovation Institute (A2I2) <span className="accent">@ Purdue</span>
             </h1>
             <div className="w-1/4 overflow-visible translate-y-16 md:translate-y-8 lg:transform-none scale-150 md:scale-110">
-              <Image src={logo} alt="A2I2 Logo" width={dimensions.width} height={dimensions.height}/>
-              {/* <Stage width={dimensions.width} height={dimensions.height}>
-                <Layer>
-                  <Line closed points={[100, 300, 0, 150, 100, 0, 200, 150]}
-                        fill="#cfb991"
-                        shadowColor="black"
-                        shadowBlur={10}
-                        shadowOpacity={0.6} />
-                  <Line closed points={[50, 150, 0, 75, 50, 0, 100, 75]}
-                        fill="#daaa00"
-                        shadowColor="black"
-                        shadowBlur={10}
-                        shadowOpacity={0.6} />
-                  <Line closed points={[200, 250, 150, 175, 200, 100, 250, 175]}
-                        fill="#555960"
-                        shadowColor="black"
-                        shadowBlur={10}
-                        shadowOpacity={0.6} />
-                </Layer>
-              </Stage> */}
+              <Image src={logo} alt="A2I2 Logo" width={dimensions.width} height={dimensions.height} />
             </div>
           </div>
         </div>
@@ -112,7 +92,6 @@ export default function MainPage() {
         </div>
         {content}
       </main>
-      <Footer />
     </>
   )
 }
