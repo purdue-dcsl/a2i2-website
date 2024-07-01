@@ -3,6 +3,7 @@
 import "./globals.css"
 import Image from 'next/image'
 import { useEffect, useState } from 'react'
+import { useSessionStorage } from 'usehooks-ts'
 
 import Home from "./pages/home"
 import Research from "./pages/research"
@@ -13,7 +14,7 @@ import News from "./pages/news"
 import { useTheme } from "./ThemeContext";
 
 export default function MainPage() {
-  const [show, setShow] = useState('home');
+  const [show, setShow] = useSessionStorage('currentTab', 'home');
   const [logo, setLogo] = useState('/favicon.ico');
   const { mode } = useTheme();
 
