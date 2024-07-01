@@ -35,22 +35,6 @@ export default function MainPage() {
     content = <News />;
   }
 
-  const [dimensions, setDimensions] = useState({
-    width: 0,
-    height: 0
-  })
-
-  useEffect(() => {
-    function setSize() {
-      setDimensions({
-        width: 400,
-        height: 500,
-      });
-    }
-    setSize();
-
-  }, []);
-
   useEffect(() => {
     if (mode === "dark") {
       setLogo('/favicon.ico');
@@ -64,16 +48,14 @@ export default function MainPage() {
       <main className="flex min-h-screen w-screen flex-col items-center justify-stretch">
         <div className="p-12 hero w-screen lg:p-24 md:p-18">
           {/*<p className="font-extralight">Assured Autonomy Innovation Institute</p>*/}
-          <div className="w-full flex h-40 md:h-60 lg:h-80">
+          <div className="w-full flex ">
             <h1 className="font-bold text-left w-3/4 mr-3 text-xl md:text-5xl lg:text-7xl">
               Assured Autonomy Innovation Institute (A2I2) <span className="accent">@ Purdue</span>
             </h1>
-            <div className="w-1/4 overflow-visible translate-y-16 md:translate-y-8 lg:transform-none scale-150 md:scale-110">
-              <Image src={logo} alt="A2I2 Logo" width={dimensions.width} height={dimensions.height} />
-            </div>
+            <Image src={logo} alt="A2I2 Logo" className="w-1/4 object-cover overflow-visible" width={1080} height={1080} />
           </div>
         </div>
-        <div className="grid grid-flow-col w-11/12 md:w-3/4 justify-stretch mt-6 tabSelector p-2 z-40">
+        <div className="grid sm:grid-cols-5 w-11/12 md:w-3/4 justify-stretch mt-6 tabSelector p-2 z-40">
           <button className={show === 'home' ? 'border-b-4 tabButton md:p-3 tabButtonSelected' : 'border-b-4 tabButton md:p-3'} onClick={() => changeShow('home')}>
             <p className="text-center">Home</p>
           </button>
